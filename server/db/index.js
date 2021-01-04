@@ -1,10 +1,10 @@
 const db = require('./database');
-const Model = require('./sampleModel');
+const User = require('./User');
 // Import all models
 
 // Create associations
 
 module.exports = {
 	db,
-	Model,
+	User,
 };
