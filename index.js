@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3000;
 */
 db.sync({ force: true }).then(() => {
 	app.listen(PORT, () => {
-		console.log(`Listening in on port: ${PORT}`);
+		console.log(`Listening in on port: ${PORT}\nhttp://localhost:3000/
+		`);
 	});
 });
