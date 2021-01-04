@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 // mounted on /api
-// router.use('/', require())
+router.use('/users', require('./users'));
 
 // 404 handling; cannot find specific route
 router.use((req, res, next) => {
