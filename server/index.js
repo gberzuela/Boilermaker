@@ -5,7 +5,8 @@ const path = require('path');
 const session = require('express-session');
 const passport = require('passport');
 const { db, User } = require('./db');
-require('../secrets');
+
+if (process.env.NODE_ENV === 'development') require('../secrets');
 
 /* logging middleware */
 app.use(morgan('dev'));
